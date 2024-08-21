@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array destruction
+        const fruits=["banana","orange","apple","mango"]
+        let [fruit1,fruit2,fruit3,fruit4]=fruits;
+        console.log(fruit4)
+        const a1=[1,2,3];
+        const a2=[4,5,6];
+        const a3=[...a1,...a2];
+        const fname='Benita Jaison';
+const greet=`Hello ${fname}`;
+function outer(){
+    const x=20;
+    function inner(){
+        console.log(x);
+    }
+        return outer;
+    }
+
+
+        //object destructuring
+        const person={
+            fullname:'Benita Jaison',
+            age:47,
+            address:{
+                street:'Koramangala',
+                city:'Bangalore',
+                country:'India'
+            }
+        }
+        //if you are getting rom API
+        const { fullname,age,address}=person;
+        console.log(fullname);
+        consle.log(age);
+        console.log(address);
+    </script>
+</body>
+</html>

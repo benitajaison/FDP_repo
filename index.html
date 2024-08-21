@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Flex Box Display </title>      
+
+ <style>
+ body{
+ padding: 0;
+ margin: 0;
+ }
+ .flex-container{
+ background-color: indianred;
+ display: flex;
+/* flex-direction: row;  */
+/* flex-wrap: nowrap; */
+ height: 400px;
+align-items: end;
+
+ justify-content: space-evenly; 
+
+}
+ .flex-item{
+ background-color: wheat;
+ margin: 20px;
+ padding: 20px;
+ display: inline-block;
+ width: 100px;
+ text-align: center;
+ }
+ #One{
+ flex-grow:1;
+ }
+ #Two{
+flex-grow:1;
+}
+
+/* #Three{
+           flex-grow:3 ;
+ 
+        } */
+ </style>
+
+</head>
+<body>
+ <div class="flex-container">
+ <div class="flex-item" id="One">One</div>
+ <div class="flex-item" id="Two">Two</div>
+<!-- <div class="flex-item" id="Three">Three</div> -->
+<!-- <div class="flex-item" id="One">Four</div>
+        <div class="flex-item" id="Two">Five</div>
+        <div class="flex-item" id="Three">Six</div>
+        <div class="flex-item" id="One">Seven</div>
+        <div class="flex-item" id="Two">Eight</div> -->
+ </div>
+
+</body>
